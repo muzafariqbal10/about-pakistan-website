@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+</head>
+
+<style>
+
+  .navb li {
+    list-style-type: none;
+    margin: 0px;
+    padding: 1px 16px;
+    overflow: hidden;
+    background-color: rgb(4, 3, 3);
+
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: inline-block;
+    color: rgb(253, 251, 251);
+    text-align: center;
+    padding: 3px 80px;
+    text-decoration: none;
+    margin: auto;
+    align-items: center;
+  }
+
+  .navb a:hover {
+    color: orangered;
+  }
+
+  .container {
+    display: flex;
+    align-items: right;
+  }
+
+  .image {
+    max-width: 150px;
+    margin-left: 20px;
+    padding-left: 2%;
+  }
+
+  .text {
+    padding: 2%;
+    flex: 1%;
+    text-align: center;
+    -ms-text-stify: center;
+  }
+
+
+
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .padd {
+    padding: 3%;
+  }
+
+  .padd img {
+    border-radius: 50px;
+  }
+
+  .podd {
+    padding: 1%;
+  }
+
+  .ms {
+    width: 320;
+    margin-right: 3%;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+
+  .dropdown-button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+
+  }
+
+
+  .dropdown-content  {
+    display: none;
+    position: absolute;
+    background-color: #cdcdcd;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 10;
+  }
+
+  .dropdown-content a {
+    /* background-color: #cdcdcd; */
+    color:white;
+    padding: 0px 12px;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+  }
+
+
+  .dropdown-content a:hover {
+    background-color: #000000;
+  }
+
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+    
+  }
+</style>
+
+<body>
+  <header style="text-align: center;font-size: xx-large;">WELCOME TO PAKISTAN </header>
+  <div class="navb" style="font-size: x-large;">
+    <li class="m"><a href="index.html">HOME</a></li>
+    <li><a href="SIndh.html">Sindh</a></li>
+    <li> <a href="punjab.html">Punjab </a></li>
+    <li> <a href="kpk.html">Kpk</a></li>
+    <li><a href="baluchistan.html">Balochistan</a></li>
+    <div class="dropdown">
+      <button class="dropdown-button">Capital cities</button>
+      <div class="dropdown-content">
+        <li><a href="isalamabad.html">Islamabad</a></li>
+        <li> <a href="lahore.html">Lahore</a></li>
+        <li> <a href="karachi.html">Karachi</a></li>
+        <li><a href="quetta.html">Quetta</a></li>
+        <li><a href="peshawar.html">Peshawar</a></li>
+      </div>       
+    </div>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="this web imgs/hp.jpg" class="d-block w-100" alt="..." width="1200px" height="860px">
+        </div>
+        <div class="carousel-item">
+          <img src="this web imgs/Faisal-Mosque-in-Islamabad-A-01-06-1024x640.jpg" class="d-block w-100" alt="..."
+            width="1200" height="860px">
+        </div>
+        <div class="carousel-item">
+          <img src="this web imgs/i.jpg" class="d-block w-100" alt="..." width="1200" height="860px">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <hr>
+    <center>
+      <h2 class="podd">EDUCATION:</h2>
+      <div class="padd">
+        <img
+          src="https://img.jagranjosh.com/images/2022/July/2972022/up-govt-bans-entry-of-school-students-in-malls-parks-restaurants-wearing.jpg"
+          width="700px" alt="">
+        <div class="container"></div>
+
+        <p class="text" style="font-size: large;">
+          <strong>PRIMARY EDUCATION :</strong><br><br>
+          In Pakistan, the education system adopted from colonial authorities has been described as one of the <br>
+          most underdeveloped in the world. Barely 60% of children complete grades 1 to 5 at primary school, <br>
+          despite three years of play group, nursery and kindergarten pre-school to prepare them. <br>
+          <br><br><strong>MIDDLE EDUCATION:</strong> <br><br>
+          Middle school follows with grades 6 to 8. Single-sex education is still preferred in rural areas. Subjects
+          include <br>
+          Urdu,
+          English, arts, Islamic studies, maths, science, social studies, and computer science where equipment is
+          available. <br>
+          <br> <br> <strong>SECONDARY EDUCATION</strong> <br><br>
+          Senior school covers grades 9 to 12 with annual examinations. On completion of grade 10, pupils may qualify
+          for
+          a <br>
+          secondary school certificate. If they wish to, they may proceed further to grade 12, following which they sit
+          a
+          <br>
+          final examination for their higher secondary school certificate. During this time, they opt for one of several
+          <br>
+          streams that include pre-medical, pre-engineering, humanities / social sciences and commerce. <br>
+        </p>
+      </div>
+      <hr>
+      <h2 class="podd">ECONOMY:</h2>
+      <div class="padd">
+        <img
+          src="https://media.istockphoto.com/id/1345912457/photo/financial-stock-market-graph-selective-focus.jpg?s=612x612&w=0&k=20&c=I-XKq4_2c3rOJPezkG5J6DNbl65OVgmGbX4yrp5T7qQ="
+          alt="img" width="0900" height="400">
+
+        <p class="text" style="font-size: large;">
+          The economy of Pakistan is classified as a developing, mixed economy with <br>
+          agriculture, industry,
+          and services sectors. Here are some key points about Pakistan's economy up to 2021: <br>
+          <br> <br><strong>Agriculture:</strong><br>
+          Agriculture has historically been a significant sector in Pakistan's economy, employing a <br>
+          large portion of the workforce. Major crops include cotton, wheat, rice, sugarcane, <br>
+          and maize. The country also produces fruits, vegetables, and livestock. <br>
+          <br> <br><strong>Industry:</strong><br>
+          Pakistan has a diverse industrial base, including textiles, manufacturing, chemicals, cement, food processing,
+          <br>
+          and more. The textiles and apparel sector has been a major contributor to exports and employment <br>.
+          <br><br> <strong>Services: </strong><br>
+          The services sector has been growing and plays a crucial role in the economy. <br>
+          includes finance, telecommunications, information technology, and the retail sector. <br>
+          <br><br><strong>Trade:</strong> <br>
+          Pakistan's major trading partners include China, the United States, the European Union, and the Middle East.
+          <br>
+          Textiles and garments, agricultural products, and other manufactured goods are among the country's key
+          exports.
+          <br>
+          <br><br> <strong>Challenges: </strong><br>
+          Pakistan has faced several economic challenges, including inflation, unemployment, energy shortages, and a
+          large
+          <br>
+          informal
+          economy. Political instability and security concerns have also had an impact on economic growth and
+          investment.
+          <br>
+
+
+        </p>
+      </div>
+    </center>
+    <!-- 
+  <footer>]
+    <ul style="font-size: xx-large;">
+      <p style="font-size: large;">
+        <marquee> www.StartupSindh.com </marquee>
+      </p>
+  </footer> -->
+</body>
+
+</html>

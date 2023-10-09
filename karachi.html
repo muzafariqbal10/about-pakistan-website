@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .navb li {
+        list-style-type: none;
+        margin: 0px;
+        padding: 1px 16px;
+        overflow: hidden;
+        background-color: rgb(4, 3, 3);
+
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: inline-block;
+        color: rgb(253, 251, 251);
+        text-align: center;
+        padding: 3px 80px;
+        text-decoration: none;
+        margin: auto;
+        align-items: center;
+    }
+
+    .navb a:hover {
+        color: orangered;
+    }
+
+    .container {
+        display: flex;
+        align-items: right;
+    }
+
+    .image {
+        max-width: 150px;
+        margin-left: 20px;
+        padding-left: 2%;
+    }
+
+    .text {
+        padding: 2%;
+        flex: 1%;
+        text-align: center;
+        -ms-text-stify: center;
+        justify-content: center;
+    }
+
+
+
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .padd {
+        padding: 3%;
+    }
+
+    .padd img {
+        border-radius: 50px;
+    }
+
+    .podd {
+        padding: 1%;
+    }
+
+    .ms {
+        width: 320;
+        margin-right: 3%;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+
+    .dropdown-button {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 5px;
+        border: none;
+        cursor: pointer;
+
+    }
+
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #cdcdcd;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+        z-index: 10;
+    }
+
+    .dropdown-content a {
+        /* background-color: #cdcdcd; */
+        color: white;
+        padding: 0px 12px;
+        text-decoration: none;
+        display: block;
+        overflow: hidden;
+        text-align: center;
+        align-items: center;
+    }
+
+
+    .dropdown-content a:hover {
+        background-color: #000000;
+    }
+
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+
+    }
+</style>
+
+<body>
+    <header style="text-align: center;font-size: xx-large;background-color: antiquewhite;">WELCOME TO KARACHI</header>
+    <div class="navb" style="font-size: x-large;">
+        <li class="m"><a href="index.html">HOME</a></li>
+        <li><a href="SIndh.html">Sindh</a></li>
+        <li> <a href="punjab.html">Punjab </a></li>
+        <li> <a href="kpk.html">Kpk</a></li>
+        <li><a href="baluchistan.html">Balochistan</a></li>
+        <div class="dropdown">
+            <button class="dropdown-button">Capital cities</button>
+            <div class="dropdown-content">
+                <li><a href="isalamabad.html">Islamabad</a></li>
+                <li> <a href="lahore.html">Lahore</a></li>
+                <li> <a href="karachi.html">Karachi</a></li>
+                <li><a href="quetta.html">Quetta</a></li>
+                <li><a href="peshawar.html">Peshawar</a></li>
+            </div>
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://content-cdn.zameen.com/1633593294605_43a94542c0.jfif" class="d-block w-100"
+                        alt="..." width="1200px" height="700px">
+                </div>
+                <div class="carousel-item">
+                    <img src="        https://cdn.britannica.com/85/128585-050-5A1BDD02/Karachi-Pakistan.jpg
+                    " class="d-block w-100" alt="..." width="1200" height="700px">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://2.bp.blogspot.com/-lMNY48KEK0M/T-MG5TDOQCI/AAAAAAAABYQ/Ju2Pyr_ifaA/s1600/abdullah-shah-ghazi-tomb.jpg"
+                        class="d-block w-100" alt="..." width="1200" height="700px">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <hr>
+        </div>
+        <center>
+            <h2 class="podd">BEHRIA TOWN KARACHI:</h2>
+            <div class="padd">
+                <img src="https://content-cdn.zameen.com/bahria_town_karachi_40c398c796.jpg" width="700px" alt="">
+                <div class="container"></div>
+
+                <p class="text" style="font-size: large;">
+
+
+                    <strong>Here are some key points about Bahria Town Karachi: </strong> <br><br>
+
+                    <strong>Location:</strong> <br>
+                    Bahria Town Karachi is located on the outskirts of Karachi, near the Superhighway
+                    and M-9 Motorway. <br>It covers a vast area of land and is divided into various sectors and
+                    precincts. <br>
+
+                    <br><strong>Development:</strong> <br>
+                    The development of Bahria Town Karachi began in the early 2010s and has
+                    continued to expand over <br> the years. It is designed as a modern, gated community with a range of
+                    residential, commercial, <br>and recreational facilities. <br>
+
+                    <br> <strong>Housing Options:</strong> <br>
+                    Bahria Town Karachi offers a variety of housing options, including villas,
+                    apartments, and plots <br>of different sizes. The housing options cater to a wide range of budgets
+                    and
+                    preferences. <br>
+
+                    <br><strong>Infrastructure:</strong><br>
+                    The project boasts well-planned infrastructure, including wide roads, parks,
+                    mosques, schools, hospitals,<br> shopping centers, and recreational facilities. The development aims
+                    to
+                    provide <br>residents with a comfortable and convenient lifestyle. <br>
+
+                    <br><strong>Security:</strong><br>
+                    Security is a priority in Bahria Town Karachi, and it is known for having its own <br>
+                    security force to ensure the safety of residents. <br>
+
+                    <br><strong>Amenities:</strong><br>
+                    Bahria Town Karachi offers numerous amenities, including sports facilities, golf
+                    courses, community centers, <br>and themed attractions like Bahria Adventure Land and Bahria Dancing
+                    Fountain. <br>
+
+                    <br><strong>Commercial Areas: </strong><br>
+                    There are commercial areas within Bahria Town Karachi where residents can <br>
+                    find a range of shops, restaurants, and other businesses. <br>
+
+                    <br><strong>Community Life:</strong><br>
+                    The development promotes a sense of community by organizing events and
+                    activities <br>for residents. It also has its own community management system. <br>
+
+                    <br><strong>Legal Issues: </strong><br>
+                    Town Karachi has faced legal challenges and controversies over land
+                    acquisition and other issues. These disputes <br> have had an impact on the development's progress
+                    and
+                    reputation. <br><br>
+
+                    It's important to note that the situation and development status of Bahria Town Karachi may have
+                    <br>
+                    evolved since my last update. Therefore, if you are considering buying property or moving to Bahria
+                    <br>
+                    Town Karachi, it's recommended to research the latest information and consult with real estate <br>
+                    professionals or the Bahria Town management for the most up-to-date details on the project. <br>
+                    <hr>
+
+                </p>
+                <center>
+                    <h2 class="podd">CHINA PORT KARACHI:</h2>
+                    <div class="padd">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Karachi_Seaport.jpg/1200px-Karachi_Seaport.jpg"
+                            width="700px" height="350px" alt="">
+                        <div class="container"></div>
+
+                        <p class="text" style="font-size: large;">
+                           <br><strong> Location:</strong><br>
+                            Gwadar Port is situated on the Arabian Sea, near the borders of Iran and
+                            Afghanistan. It is strategically <br> located at the crossroads of the Middle East, Central Asia,
+                            and South Asia. <br>
+
+                           <br><strong> Development: </strong><br>
+                            The port was originally developed by the Government of Pakistan but has
+                            received significant <br> investment and development assistance from China. It is considered a
+                            flagship <br> project under the China-Pakistan Economic Corridor (CPEC), which is a major <br>
+                            component of the BRI. <br>
+
+                           <br><strong> Importance: </strong><br>
+                            Gwadar Port is intended to serve as a major trade gateway for China and Central
+                            Asian countries <br>to access the Arabian Sea and beyond. It provides China with an alternate
+                            route to the Indian <br> Ocean, bypassing the congested and longer route through the Strait of
+                            Malacca. <br>
+
+                           <br><strong> Economic Impact: </strong><br>
+                            The development of the port is expected to have a transformative effect on
+                            the region's economy. <br> It is expected  to create jobs, stimulate trade, and attract investment
+                            in various sectors. <br>
+
+                           <br><strong> Infrastructure:</strong><br>
+                             In addition to the port itself, infrastructure development in and around
+                            Gwadar includes <br> the construction of roads, railways, and an international airport to <br>
+                            facilitate transportation and trade. <br>
+
+                            <br><strong>Challenges:</strong><br>
+                             The project has faced several challenges, including security concerns due to the
+                            volatile <br> situation in Balochistan, where the port is located. Additionally, there have been <br>
+                            concerns about the environmental impact of the port's construction. <br>
+
+                           <br><strong> Geopolitical Significance:</strong><br>
+                             Gwadar Port has significant geopolitical implications. It has led
+                            to increased Chinese  <br>influence in the region and has been a subject of concern for
+                            neighboring India, <br> which views it as a potential strategic threat. <br>
+
+                            <br> <strong>Trade Routes:</strong><br>
+                             Gwadar Port is expected to play a pivotal role in facilitating trade between
+                            China and <br> the Middle East, Africa, and Europe. It offers an alternative route for goods
+                            traveling <br> between China and these regions, reducing transportation time and costs. <br>
+
+                           <br><strong> Expansion Plans: </strong><br>
+                            There are plans for the expansion and development of Gwadar Port into a
+                            major economic hub.  <br>This includes the construction of a Free Trade Zone (FTZ) to attract <br>
+                            foreign investment and industrial development. <br>
+
+                            <br><strong>International Collaboration:</strong><br>
+                             Gwadar Port has garnered interest from various countries and
+                            international organizations <br> interested  in leveraging its potential for trade and economic
+                            development. <br>
+
+
+                        </p>
+
+</body>
+
+</html>
